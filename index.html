@@ -25,6 +25,7 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -453,24 +454,41 @@
                         <th scope="col">Senha</th>
                         <th scope="col">Alunos</th>
                         <th scope="col">Criada Em</th>
+                        <th scope="col">Ações</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">T203-84</th>
+                        <th scope="row">84</th>
                         <td>Ambiente de Dados</td>
                         <td>Em Progresso</td>
                         <td>V@qwJJ</td>
                         <td>14</td>
                         <td>2023-05-25</td>
+                        <td>
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#largeModal">
+                            <i class="fas fa-edit cursor-pointer"></i>
+                          </button>
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#smallModal">
+                            <i class="fas fa-trash cursor-pointer"></i>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">N391-84</th>
+                        <th scope="row">84</th>
                         <td>Projeto aplic desenv software</td>
                         <td>Em Progresso</td>
                         <td>r@oTg1</td>
                         <td>35</td>
                         <td>2023-05-25</td>
+                        <td>
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#largeModal">
+                            <i class="fas fa-edit cursor-pointer"></i>
+                          </button>
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#smallModal">
+                            <i class="fas fa-trash cursor-pointer"></i>
+                          </button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -482,6 +500,23 @@
           </div>
         </div><!-- End Left side columns -->
 
+        <div class="modal fade" id="smallModal" tabindex="-1">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Tem Certeleza que quer Deletar?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Essa ação não poderá ser desfeita!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                <button type="button" class="btn btn-primary">Sim</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
