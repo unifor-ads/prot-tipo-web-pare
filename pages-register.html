@@ -60,8 +60,8 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Crie uma Conta</h5>
-                    <p class="text-center small">Utilize suas informações para criar</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Atualize sua Senha</h5>
+                    <p class="text-center small">Utilize suas informações</p>
                   </div>
 
                   <form class="row g-3 needs-validation" novalidate>
@@ -69,15 +69,6 @@
                       <label for="yourName" class="form-label">Seu Nome</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
                       <div class="invalid-feedback">Por favor, digite seu nome!</div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Email</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Por favor, confirme seu Email!</div>
-                      </div>
                     </div>
 
                     <div class="col-12">
@@ -99,7 +90,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn cor-roxa w-100" type="submit">Criar Conta</button>
+                      <button class="btn cor-roxa w-100" type="submit">Atualizar Conta</button>
                     </div>
                     <div class="col-12">
                       <p class="small mb-0">Já tem uma conta? <a href="pages-login.html">Entre</a></p>
@@ -130,6 +121,22 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Encontrar o formulário pelo ID
+      const loginForm = document.querySelector('form');
+  
+      // Adicionar um ouvinte de evento para o evento de envio do formulário
+      loginForm.addEventListener('submit', function (event) {
+        // Prevenir o comportamento padrão de envio do formulário
+        event.preventDefault();
+  
+        // Redirecionar para index.html
+        window.location.href = 'index.html';
+      });
+    });
+  </script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
